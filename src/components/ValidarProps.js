@@ -12,7 +12,7 @@ ValidarProps.defaultProps = {
 	label: 'Ano: '
 }
 
-ValidarProps.PropTypes = {
+ValidarProps.propTypes = {
 	ano: PropTypes.number.isRequired
 }
 
