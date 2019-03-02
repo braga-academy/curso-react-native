@@ -1,10 +1,14 @@
 import React from 'react'
-import { Text } from 'react-native'
+import { Text, View } from 'react-native'
 import Padrao from '../estilo/Padrao'
 
 const Inverter = props => {
 	const inv = props.texto.split('').reverse().join('')
-	return <Text style={ Padrao.ex }>{inv}</Text>
+	return (
+		<View style={Padrao.container}>
+			<Text style={ Padrao.ex }>{inv}</Text>
+		</View>
+	)
 }
 
 const MegaSena = props => {
@@ -23,7 +27,11 @@ const MegaSena = props => {
 
 	numeros.sort((a, b) => a - b)
 
-	return <Text style={ Padrao.ex }>{ numeros.join(', ') }</Text>
+	return (
+		<View style={Padrao.container}>
+			<Text style={ Padrao.ex }>{ numeros.join(', ') }</Text>
+		</View>
+		)
 }
 
 export default Inverter

@@ -9,5 +9,10 @@ export default StyleSheet.create({
 		fontSize: 24,
 		borderRadius: 5,
 		fontWeight: 'bold'
+	},
+	container: {
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
 	}
 })

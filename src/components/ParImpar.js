@@ -10,6 +10,6 @@ const parOuImpar = (num) => {
 }
 
 export default props =>
-	<View>
+	<View style={Padrao.container}>
 		{ parOuImpar(props.numero) }
 	</View>
