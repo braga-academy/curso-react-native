@@ -8,9 +8,14 @@ import Plataformas from './components/Plataformas'
 import ValidarProps from './components/ValidarProps'
 import Evento from './components/Evento'
 import Avo from './components/ComunicacaoDireta'
+import TextoSincronizado from './components/ComunicacaoIndireta'
 import Inverter, { MegaSena } from './components/Multi'
 
 export default createDrawerNavigator({
+	TextoSincronizado: {
+		screen: TextoSincronizado,
+		navigationOptions: { title: 'Comunicação Indireta' }
+	},
 	Avo: {
 		screen: () => <Avo nome='Manoel' sobrenome='Silva' />,
 		navigationOptions: { title: 'Comunicação Direta' }
@@ -36,7 +41,8 @@ export default createDrawerNavigator({
 		screen: () => <Inverter texto='React' />
 	},
 	ParImpar: {
-		screen: () => <ParImpar numero={3} />
+		screen: () => <ParImpar numero={3} />,
+		navigationOptions: { title: 'Par & Impar' }
 	},
 	Simples: {
 		screen: () => <Simples texto='Simples' />
